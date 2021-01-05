@@ -1,0 +1,48 @@
+@font-face {
+    font-family: SourceSansPro;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+header {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: rgb(101, 1, 231);
+    color: white;
+    font-size: 20pt;
+    display: flex;
+    align-items: center; 
+}
+header p {
+    margin-left: 40px;
+}
+.btn {
+    background: rgb(101, 1, 231);
+}
+.btn:hover {
+    background: rgb(255, 196, 0);
+}
+.submitdiv {
+    text-align: center;
+}
+.confidential {
+    padding-top: 10px;
+}
+.confidential a{
+    text-decoration: none;
+}
