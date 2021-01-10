@@ -14,6 +14,15 @@
             <label for="phone" class="form-label">Ваш номер телефона</label>
             <input type="number" class="form-control" id="phone">
         </div>
+        <div class="mb-3">
+            <label for="course" class="form-label">Выберите курс</label>
+            <select class="form-select" id="course">
+                <option selected disabled></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
       
      
        <div class="submitdiv">
