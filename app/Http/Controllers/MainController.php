@@ -15,8 +15,6 @@ class MainController extends Controller
     public function formconfirm(FormConfirm $request) {
         $formuser = new FormUser;
 
-
-
         $formuser->name = $request->name;
         $formuser->email = $request->email;
         $formuser->phone = $request->phone;
@@ -32,19 +30,14 @@ class MainController extends Controller
             session()->flash('denied', 'Пользователь с данным e-mail уже зарегистрирован.');
         }
         //$allformusers = FormUser::where('email', $formuser->email)->firstOrFail();
-
         //dd($allformusers);
-
         // if (!(is_null(FormUser::where('email', $formuser->email)->firstOrFail()))) {
         //    session()->flash('denied', 'Пользователь с данным e-mail уже зарегистрирован.');
         // } else {
         //     $formuser->save();
         //     session()->flash('success', 'Ваша заявка принята! Вам скоро перезвонят.');
         // }
-        
-
         // $formuser->save();
-
         //return view('welcome');
 
         return redirect()->route('welcome');
