@@ -21,14 +21,22 @@ header {
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
-    height: 100px;
+   
     background-color: rgb(101, 1, 231);
     color: white;
     font-size: 20pt;
+}
+.content1 {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     flex-wrap:wrap;
+}
+.content2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .btn {
     background: rgb(101, 1, 231);

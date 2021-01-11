@@ -13,6 +13,7 @@ Auth::routes([
     'verify' => false
 ]);
 
+
 Route::get('/',[MainController::class, 'index'])->name('welcome');
 
 Route::post('/', [MainController::class, 'formconfirm'])->name('formconfirm');
@@ -32,3 +33,8 @@ Route::group(['middleware' => 'auth'], function() {
         
     
 });
+
+
+Route::get('/coursesinfo', function () {
+    return view('coursesinfo');
+})->name("coursesinfo");

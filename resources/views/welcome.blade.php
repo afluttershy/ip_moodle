@@ -8,6 +8,7 @@
             <div class="alert alert-danger" style="text-align:center;" role="alert">{{ session()->get('denied')}}</div>
         @endif
     <form method="POST" action="{{ route('formconfirm') }}">
+        <h1 class="h1-auth">Регистрация на курс</h1>
         <div class="mb-3">
             <label for="name" class="form-label">Ваше имя</label>
             <input required type="text" class="form-control" id="name" name="name">
