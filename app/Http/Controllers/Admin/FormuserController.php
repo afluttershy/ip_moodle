@@ -83,7 +83,10 @@ class FormuserController extends Controller
     {
         //dd($formuser);
         $formuser->delete();
-        $formusers = FormUser::get();
-        return view('home', compact('formusers'));
+        // $formusers = FormUser::get();
+        // return view('home', compact('formusers'));
+
+        return redirect()->route('home');
+
     }
 }

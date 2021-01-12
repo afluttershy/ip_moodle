@@ -13,7 +13,7 @@
         </script>
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div class="content1">
                 <a class="link" href="{{ url('/') }}">Курсы Екатерины Шукаловой
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
@@ -36,7 +36,23 @@
                 <a class="link" href="{{ route('coursesinfo') }}">О курсах</a>
                 <a class="link" href="{{ route('welcome') }}">Записаться</a>
             </div>
-        </header>
+        </header> -->
+        <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <p class="h5 my-0 me-md-auto fw-normal">CoolBTool - Курсы Екатерины Шукаловой</p>
+            <nav class="my-2 my-md-0 me-md-3">
+                <a class="p-2 text-dark" href="{{ route('coursesinfo') }}">О курсах</a>
+                <a class="p-2 text-dark" href="{{ route('welcome') }}">Записаться</a>
+                @auth
+                    <a class="p-2 text-dark" href="{{ url('/home') }}">Панель администратора</a> 
+                </nav>
+                    <a href="{{ route('getlogout') }}" class="btn btn-outline-danger btn-enter">Выйти</a>
+                @endauth
+                @guest
+                </nav>
+                    <a  class="btn btn-outline-primary btn-enter" href="{{ url('/login') }}">Войти</a>
+                @endguest
+        </header>   
+
         @yield('content')
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>

@@ -33,7 +33,7 @@
       
         @csrf
        <div class="submitdiv">
-        <button type="submit" class="btn btn-primary">Записаться</button>
+        <button type="submit" class="btn btn-form btn-primary">Записаться</button>
         <p class="confidential">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="http://project3033659.tilda.ws/page14177895.html">политикой конфиденциальности</a></p>
         </div>
     </form>

@@ -45,10 +45,10 @@
                                     <td>{{ $formuser->email }}</td>
                                     <td>{{ $formuser->course }}</td>
                                     <td> 
-                                        <form action="{{ route('formuser.destroy', $formuser) }}" method="POST">
+                                        <form class="deleteform" action="{{ route('formuser.destroy', $formuser) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <input class="btn btn-danger" type="submit" value="Удалить">
+                                            <input class="btn btn-form btn-danger" type="submit" value="Удалить">
                                         </form>
                                     </td>
                                 </tr>
